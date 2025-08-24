@@ -69,6 +69,7 @@
       overflow: hidden;
       text-align: center;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding-bottom: 1rem;
     }
     .product img {
       width: 100%;
@@ -81,6 +82,9 @@
     .product p {
       margin: 0.5rem;
       font-size: 0.9rem;
+    }
+    .paypal-btn {
+      margin-top: 0.5rem;
     }
     .contact {
       text-align: center;
@@ -117,24 +121,55 @@
   <section class="section" id="boutique">
     <h2>Nos bouquets</h2>
     <div class="products">
+
+      <!-- Produit 1 : Roses -->
       <div class="product">
-        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Bouquet de roses">
+        <img src="https://images.unsplash.com/photo-1526045612212-70caf35c14df" alt="Bouquet de roses">
         <h3>Bouquet de Roses</h3>
         <p>Un classique romantique, idéal pour offrir.</p>
         <p><strong>35 €</strong></p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="paypal-btn">
+          <input type="hidden" name="cmd" value="_xclick">
+          <input type="hidden" name="business" value="ton-email-paypal@exemple.com">
+          <input type="hidden" name="item_name" value="Bouquet de Roses">
+          <input type="hidden" name="amount" value="35.00">
+          <input type="hidden" name="currency_code" value="EUR">
+          <input type="submit" value="Acheter avec PayPal">
+        </form>
       </div>
+
+      <!-- Produit 2 : Tulipes -->
       <div class="product">
-        <img src="https://images.unsplash.com/photo-1526045612212-70caf35c14df" alt="Bouquet champêtre">
-        <h3>Bouquet Champêtre</h3>
-        <p>Des fleurs des champs colorées pour la bonne humeur.</p>
-        <p><strong>25 €</strong></p>
+        <img src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6" alt="Bouquet de tulipes">
+        <h3>Bouquet de Tulipes</h3>
+        <p>Coloré et lumineux, parfait pour égayer la maison.</p>
+        <p><strong>30 €</strong></p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="paypal-btn">
+          <input type="hidden" name="cmd" value="_xclick">
+          <input type="hidden" name="business" value="ton-email-paypal@exemple.com">
+          <input type="hidden" name="item_name" value="Bouquet de Tulipes">
+          <input type="hidden" name="amount" value="30.00">
+          <input type="hidden" name="currency_code" value="EUR">
+          <input type="submit" value="Acheter avec PayPal">
+        </form>
       </div>
+
+      <!-- Produit 3 : Lys -->
       <div class="product">
-        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="Orchidée blanche">
-        <h3>Orchidée Blanche</h3>
-        <p>Élégante et raffinée, parfaite pour la maison.</p>
-        <p><strong>40 €</strong></p>
+        <img src="https://images.unsplash.com/photo-1592796942469-fc98c3a4d0d2" alt="Lys blanc">
+        <h3>Lys à l’unité</h3>
+        <p>Élégant et raffiné, pour un style minimaliste.</p>
+        <p><strong>8 €</strong></p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="paypal-btn">
+          <input type="hidden" name="cmd" value="_xclick">
+          <input type="hidden" name="business" value="ton-email-paypal@exemple.com">
+          <input type="hidden" name="item_name" value="Lys à l’unité">
+          <input type="hidden" name="amount" value="8.00">
+          <input type="hidden" name="currency_code" value="EUR">
+          <input type="submit" value="Acheter avec PayPal">
+        </form>
       </div>
+
     </div>
   </section>
 
@@ -143,7 +178,7 @@
     <p>📍 123 Rue des Fleurs, Paris</p>
     <p>📞 01 23 45 67 89</p>
     <p>✉️ contact@fleuriste-emeraude.com</p>
-    <p><em>Commandez par téléphone ou venez en boutique !</em></p>
+    <p><em>Commandez par téléphone ou directement en ligne !</em></p>
   </section>
 
   <footer>
@@ -152,3 +187,4 @@
 
 </body>
 </html>
+
